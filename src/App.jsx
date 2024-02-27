@@ -1,16 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import FriendsList from './components/FriendsList';
+
+const initialFriends = [
+  {
+    id: 118836,
+    name: "Eric",
+    image: "https://i.pravatar.cc/48?u=118836",
+    balance: -7,
+  },
+  {
+    id: 933372,
+    name: "Queen",
+    image: "https://i.pravatar.cc/48?u=933372",
+    balance: 20,
+  },
+  {
+    id: 499476,
+    name: "Prime",
+    image: "https://i.pravatar.cc/48?u=499476",
+    balance: 0,
+  },
+];
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>Eating With Friends</h1>
-    </>
+    <div className='app'>
+      <div className='sidebar'>
+        <FriendsList initialFriends={initialFriends} />
+      </div>
+    </div>
   )
 }
 
-export default App
+export default App;
