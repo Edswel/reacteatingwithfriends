@@ -10,7 +10,7 @@ const FormAddFriend = () => {
       <label htmlFor="">🖼️ Image</label>
       <input type="text" />
 
-      <Button>Add friend</Button>
+      <Button>Add</Button>
     </form>
   )
 }
