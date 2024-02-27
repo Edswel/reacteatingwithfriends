@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 const Friend = ({friend}) => {
   return (
@@ -18,7 +19,7 @@ const Friend = ({friend}) => {
         <p>You do not owe any money</p>
       )}
 
-      <button className='button'>Select</button>
+      <Button>Select</Button>
     </li>
   )
 }
